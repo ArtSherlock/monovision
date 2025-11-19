@@ -105,10 +105,12 @@ h1 {
   align-items: center;
 
   width: 160px;
-  height: 38px;
+  min-height: 38px;
+  padding: 0 10px;
   margin-bottom: 100px;
 
   border: 1px solid var(--light-color);
+  background: transparent;
 }
 
 .promo-list {
@@ -121,5 +123,33 @@ h1 {
 
   height: 20px;
   margin-top: auto;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.12) 50%, rgba(255, 255, 255, 0.2) 100%);
+  background: linear-gradient(
+        180deg, 
+      rgba(255, 255, 255, 0.04) 0%, 
+      rgba(255, 255, 255, 0.12) 50%, 
+      rgba(255, 255, 255, 0.2) 100%);
+}
+
+
+/* ABOUT */
+
+.about {
+  padding: 80px 0;  
+  color: var(--dark);
+}
+
+.about-title {
+  font-style: italic;   
+  font-size: 12px;
+  
+}
+
+.about-txt {
+  font-size: 40px;
+  /* color: var(--dark); */
+  font-weight: 400;
+
+  span {
+    color: #a5a5a5;
+  }
 }
